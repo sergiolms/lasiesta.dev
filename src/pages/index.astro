@@ -1,9 +1,5 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { Image } from 'astro:assets';
-// import Card from '../components/Card.astro';
-
-import sleepImage from '../images/sleep.gif';
 
 // TODO: Load from i18n
 const title = "Sergio LMS - La Siesta Dev"
@@ -12,14 +8,14 @@ const description = "Mi página web personal"
 
 <Layout title={title} description={description}>
 	<main>
-		<Image src={sleepImage} alt="let him cook" loading="eager" />
+		<img src="/sleep.webp" alt="let him cook"/>
         <p>En proceso, no me estreses...</p>
 	</main>
 </Layout>
 
 <style>
 	main {
-		margin: 50vh auto;
+		margin: 50vh auto 0 auto;
 		width: 800px;
 		max-width: calc(100% - 2rem);
 		
